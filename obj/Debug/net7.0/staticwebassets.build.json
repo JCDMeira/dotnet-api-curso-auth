@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hPnMtbC6qafp9nixBGb53LPOF+F7cLIcBdS6fPXMm+U=",
+  "Source": "dotnet_API_Auth",
+  "BasePath": "_content/dotnet_API_Auth",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

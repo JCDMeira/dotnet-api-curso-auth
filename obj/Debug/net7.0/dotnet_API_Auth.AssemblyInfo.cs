@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet_API_Auth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d81d708babe6c9cdaa025c2d34ec56ffe9143fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a147788cdcca741c535c6fb35c84d27c62f0602")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet_API_Auth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet_API_Auth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

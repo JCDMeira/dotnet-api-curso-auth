@@ -10,9 +10,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
-
 #region [DI]
 builder.Services.AddTransient<TokenService>();
 builder.Services.AddTransient<UserService>();
@@ -20,12 +17,28 @@ builder.Services.AddTransient<UserService>();
 
 builder.Services.Configure<TokenManagement>(builder.Configuration.GetSection("tokenManagement"));
 
+#region [Cors]
+builder.Services.AddCors();
+#endregion
+
+var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+#region [Cors]
+app.UseCors(c =>
+{
+    c.AllowAnyHeader();
+    c.AllowAnyMethod();
+    c.AllowAnyOrigin();
+
+});
+#endregion
 
 app.UseHttpsRedirection();
 
